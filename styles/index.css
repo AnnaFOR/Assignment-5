@@ -1,111 +1,11 @@
 * {
-    margin: 20px;
+    /*margin: 10px;*/
+    padding: 10px;
     
-}
-
-/* HEADER SECTION-TOP */
-
-.top-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /*max-width: 610px;
-    width: 100%;*/
-    list-style-type: none;
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-content: space-between;
-    list-style-type: none; /* it's just not working!!!! */
-
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 28px;
-    color: #2F281E;
-}
-/*top: display: flex, justify-content: space between (separates the divs for the logo and navigation to separate sides of the page). 
-navigation: display:flex, justify-content: space between, max-width: 610px, width:100%. 
-(separates the nav links from the buttons. Max width is needed so that the content does not stretch too far. 
-Width 100% is used for if there is not enough space on the page to allow the max-width, it will take up 100% of the available space)
-nav: display: flex, justify-content: space-evenly, flex-direction: row, list-type: none*/
-
-
-.nav-btns {
-    display: flex;
-    justify-content: left;
-
-    width: 110px;
-    height: 46px;
-    border-radius: 5px;
-    border: none;
-
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.nav-btn1 {
-    background-color: #BCD0E5;
-    color: #173A56;
-}
- 
-.nav-btn2 {
-    background-color: #FF9900;
-    color: #FFFFFF;
-}
-
-/* HEADER SECTION-HEADLINE */
-
-.header-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: left;
-    align-items: flex-start;
-}    
-
-.header-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-self: flex-start;
-}
-
-.header-card1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self: flex-start;
-}
-
-.header-card-box {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-.header-card2 {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-items: space-evenly;
-    align-items: flex-end;
-
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
@@ -113,58 +13,7 @@ h1 {
     color: #2F281E;
 }
 
-.header-card1 p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 28px;
-    color: #544837;     
-}
-
-.header-btn {
-    width: 175px;
-    height: 53px;
-    border-radius: 5px;
-    border: none;
-    background-color: #FF9900;
-    color: #FFFFFF;
-
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.underlined-header-link {
-    text-decoration-line: underline;
-    font-family:'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FF9900
-} 
-
-/* SECTION ONE */
-
-.section1-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 h2 {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -172,8 +21,178 @@ h2 {
     color: #2F281E;
 }
 
-.section1-headings {
-    font-family: 'Poppins', sans-serif;
+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    text-align: justify;
+}
+
+.title-bold {
+    font-weight: bold;
+    color: #2F281E;
+}
+
+/* TOP  NAV */
+
+.top {
+    width: 1400px;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav {
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; /* LITERALLY SPENT HOURS IF NOT DAYS WITH THIS... */
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2F281E;
+}    
+
+.top-btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*font-style: normal; WHY DO I NEED TO WRITE THEM SEPARATELY for each btn?
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;*/
+}
+
+.btn-in {
+    height: 46px;
+    width: 102px;
+    border-radius: 5px;
+    background-color: white; 
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+}
+
+.btn-in:hover {
+    text-decoration: underline;
+    background-color: rgba(81, 113, 169, 0.514)
+}
+
+.btn-up {
+    height: 46px;
+    width: 102px;
+    border-radius: 5px;
+    background-color: #FF9900;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.btn-up:hover {
+    text-decoration: underline;
+    background-color: rgba(81, 113, 169, 0.514)
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+}    
+
+.header-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-txt p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #544837;
+}
+
+#header-btn {
+    width: 175px;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF9900;
+    
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#header-btn:hover {
+    text-decoration: underline;
+    background-color: rgba(81, 113, 169, 0.514)
+}
+
+#underlined-header-link {
+    display: flex;
+    justify-self: flex-start;
+    align-self: center;
+
+    text-decoration-line: underline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FF9900
+} 
+
+/* SUPERPOWERS */
+
+.superpowers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.super-headings {
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
@@ -181,17 +200,7 @@ h2 {
     color: #2F281E;
 }
 
-.section1-text {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
-}
-
-#btn-section1 {
-    font-family: 'Poppins', sans-serif;
+#super-btn {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -206,52 +215,134 @@ h2 {
     background-color: #FF9900;
 }
 
-/* SECTION TWO */
+#super-btn:hover {
+    text-decoration: underline;
+    background-color: rgba(81, 113, 169, 0.514)
+}
 
-.section2-container {
+/* PROFESSIONALS */
+
+.professionals {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }    
 
-.section2-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-self: flex-start;
-}
-
-.section2-card1 {
+.prof-txt {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-self: flex-start;
+    align-items: center;
 }
 
-.section2-card2 {
+.prof-img {
     display: flex;
-    flex-direction: column-reverse;
-    justify-items: space-evenly;
-    align-items: flex-end;
-
-
+    justify-self: flex-end;
 }
 
-.section2-cards p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #544837;
+/* MANAGERS */
+
+.managers {
+    display: flex;
+    flex-direction: row;
 }
 
-.p.bold {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 26px;
-    color: #2F281E;
+.man-img {
+    display: flex;
+    justify-self: flex-start;
+}
 
+.man-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* MARKETERS */
+
+.marketers {
+    display: flex;
+    flex-direction: row;
+}
+
+.mar-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.mar-img {
+    display: flex;
+    justify-self: flex-end;
+}
+
+/* FOOTER */
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        max-height: 308px;
+    }
+    
+    .logo-foot {
+        /*margin-top: 3555px;
+        margin-left: 173px;*/
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .foot-links1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        list-style-type: none;
+    }
+    
+    .foot-links2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        list-style-type: none;
+    }
+
+    .empty-box {
+        width: 325px;
+        height: 48px;
+        border: 1px solid #BCD0E5;
+        border-radius: 5px;
+    }
+
+    .btn-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .btn-foot {
+        width: 131px;           
+        height: 39px;
+        border-radius: 5px;
+        border-radius: none;
+        background-color: #FF9900;
+
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px; 
+        text-align: center;
+    }
+
+    .btn-foot:hover {
+        text-decoration: underline;
+        background-color: rgba(81, 113, 169, 0.514)
+    }
